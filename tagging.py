@@ -51,7 +51,7 @@ def tagging(sentence_list):
         data['ws'] = word_sentence_list[i]
         if pos_sentence_list is not None:
             data['pos'] = pos_sentence_list[i]
-        if entity_sentence_list is not None
+        if entity_sentence_list is not None:
             data['ner'] = sorted(entity_sentence_list[i])
 
         f.write(json.dumps(data, ensure_ascii=False) + "\n")
